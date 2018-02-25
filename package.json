@@ -1,0 +1,29 @@
+{
+  "name": "sequelize-to-json-schema",
+  "version": "0.1.0",
+  "description": "Flexible json-schema generator from sequelize models",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raisely/sequelize-to-json-schema.git"
+  },
+  "keywords": [
+    "json-schema",
+    "sequelize"
+  ],
+  "author": "Agency Ventures",
+  "contributors": [
+    {
+      "name": "Chris Jensen",
+      "email": "chris@agency.sc"
+    },
+  ],
+  "license": "JWL",
+  "bugs": {
+    "url": "https://github.com/raisely/sequelize-to-json-schema/issues"
+  },
+  "homepage": "https://github.com/raisely/sequelize-to-json-schema#readme"
+}
