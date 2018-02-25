@@ -2,8 +2,9 @@
   "name": "sequelize-to-json-schema",
   "version": "0.1.0",
   "description": "Flexible json-schema generator from sequelize models",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,11 +20,26 @@
     {
       "name": "Chris Jensen",
       "email": "chris@agency.sc"
-    },
+    }
   ],
   "license": "JWL",
   "bugs": {
     "url": "https://github.com/raisely/sequelize-to-json-schema/issues"
   },
-  "homepage": "https://github.com/raisely/sequelize-to-json-schema#readme"
+  "homepage": "https://github.com/raisely/sequelize-to-json-schema#readme",
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "pluralize": "^7.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.0",
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0"
+  },
+  "peerDependencies": {
+    "sequelize": "^3.31.2"
+  }
 }
