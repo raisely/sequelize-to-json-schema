@@ -63,8 +63,9 @@ schema = {
 You can customise your factory by passing options
 
 ### options.association
-An object listing the associations to include in the schema
-The keys of the object are the association names and the value should be either
+An object listing the associations to include in the schema *for all models*
+The keys of the objects are the names of models, each key selects an object where
+the keys of the object are the association names and the value should be either
 'INLINE' or 'REL'.
 Use 'INLINE' if you want the association to be presented within the schema instead
 of by reference ('REL')
@@ -110,7 +111,7 @@ const factory = new SchemaFactory({
   customSchema,
   jsonAttributeMapper = (attr) => _.camelCase(attr),
   selectAttributes = () => ['full_name', 'status', 'address', 'profile'],
-  associations: { address: 'inline' },
+  associations: { user: { address: 'inline' } },
   hrefBase: 'http://schema.example',
 });
 const schemaGenerator = factory.getSchemaGenerator(user);
