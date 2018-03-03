@@ -63,10 +63,11 @@ schema = {
 You can customise your factory by passing options
 
 ### options.association
-An object where the keys are the names of your associations and the value 'INLINE'
-if you want the assocation to be presented within the schema instead of by reference
-
-**NB:** An association must be named by selectAttributes to be included.
+An object listing the associations to include in the schema
+The keys of the object are the association names and the value should be either
+'INLINE' or 'REL'.
+Use 'INLINE' if you want the association to be presented within the schema instead
+of by reference ('REL')
 
 ### options.customSchema
 An object defineing custom information to be placed in the schema.
@@ -99,10 +100,8 @@ jsonAttributeMapper = (modelAttr) => toCamelCase(modelAttr);
 ### options.selectAttributes
 Selects which attributes to describe in the schema for a given model
 `selectAttributes(model)`
-This must return an array of strings, where each entry in the array is an attribute
-or an association.
-Use this to prevent all attributes being described by the schema, or to include
-some associations
+This must return an array of strings, where each entry in the array is an attribute.
+Use this to prevent all attributes being described by the schema
 
 ## Advanced example
 
