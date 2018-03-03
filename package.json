@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -w test/**/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -28,11 +28,14 @@
   },
   "homepage": "https://github.com/raisely/sequelize-to-json-schema#readme",
   "dependencies": {
+    "chai": "^4.1.2",
     "lodash": "^4.17.5",
     "pluralize": "^7.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^6.0.0",
+    "chai-shallow-deep-equal": "^1.4.6",
+    "chai-subset": "^1.6.0",
     "eslint": "^3.16.1",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
