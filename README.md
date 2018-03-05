@@ -104,6 +104,23 @@ Selects which attributes to describe in the schema for a given model
 This must return an array of strings, where each entry in the array is an attribute.
 Use this to prevent all attributes being described by the schema
 
+### options.virtualProperties
+Add virtual properties - properties that are not present in the model, but are
+generated dynamically whenever a model is converted to JSON.
+These take the form of customSchema, but *must* include the attribute type
+which contains a string representation of the Sequelize type that the
+property would be if it were "real"
+
+```javascript
+const options = {
+  virtualProperties: {
+    users: {
+      postCount: { type: 'INTEGER', description: 'Number of posts by the user' },
+    },
+  },
+}
+```
+
 ## Advanced example
 
 ```javascript
