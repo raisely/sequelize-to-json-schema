@@ -171,10 +171,7 @@ Contributions should pass `npm run test:ci && npm run lint` (see below on testin
 
 ## Testing
 
-1. Install the [Google Datastore Emulator](https://cloud.google.com/datastore/docs/tools/datastore-emulator)
-2. In one terminal run `npm run datastore`
-3. Copy the export command to another terminal window, eg `export DATASTORE_EMULATOR_HOST=localhost:8081`
-4. Run `npm test`
+Run `npm test`
 
 # License
 
