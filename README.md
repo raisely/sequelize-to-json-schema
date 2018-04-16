@@ -1,6 +1,8 @@
 # sequelize-to-json-schema
 Flexible json-schema generator from sequelize models
 
+[![Build Status](https://travis-ci.org/raisely/sequelize-to-json-schema.svg?branch=master)](https://travis-ci.org/raisely/sequelize-to-json-schema)
+
 Features:
 * Rename attributes if they are different in your json schema (eg snake_case to camelCase)
 * Include associations using $ref or inline
@@ -165,7 +167,7 @@ Contributions are welcome. Please submit a pull request and include tests.
 
 Please follow the coding style in `.editorconfig` and `.eslintrc`.
 
-Contributions should pass `npm test:ci && npm run lint` (see below on testing)
+Contributions should pass `npm run test:ci && npm run lint` (see below on testing)
 
 ## Testing
 
