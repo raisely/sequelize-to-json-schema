@@ -31,7 +31,7 @@ describe('SequelizeSchema', () => {
 			customSchema,
 			jsonAttributeMapper,
 			selectAttributes,
-			associations: { address: 'inline' },
+			associations: { user: { address: 'inline' } },
 			hrefBase: 'schema.example',
 		});
 		const schemaGenerator = factory.getSchemaGenerator(user);
