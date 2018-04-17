@@ -28,6 +28,7 @@ const schemaFactory = require('sequelize-to-json-schema');
 
 const factory = new SchemaFactory({
   customSchema: {
+    // modelName: { attributeName: { <schema> } }
     user: { status: { description: 'Was it all just a dream?' } },
   }
   hrefBase: 'http://schema.example',
