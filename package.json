@@ -1,6 +1,6 @@
 {
   "name": "sequelize-to-json-schema",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Flexible json-schema generator from sequelize models",
   "main": "lib/index.js",
   "scripts": {
@@ -42,7 +42,8 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
-    "mocha": "^5.1.0"
+    "mocha": "^5.1.0",
+	"sequelize-to-json-schema-tester": "../sequelize-to-json-schema-tester"
   },
   "peerDependencies": {
     "sequelize": "^3.31.2"
