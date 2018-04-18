@@ -1,6 +1,6 @@
 {
   "name": "sequelize-to-json-schema",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Flexible json-schema generator from sequelize models",
   "main": "lib/index.js",
   "scripts": {
@@ -29,12 +29,12 @@
   },
   "homepage": "https://github.com/raisely/sequelize-to-json-schema#readme",
   "dependencies": {
-    "chai": "^4.1.2",
     "lodash": "^4.17.5",
     "pluralize": "^7.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^6.0.0",
+	"chai": "^4.1.2",
     "chai-shallow-deep-equal": "^1.4.6",
     "chai-subset": "^1.6.0",
     "eslint": "^3.16.1",
@@ -42,8 +42,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
-    "mocha": "^5.1.0",
-	"sequelize-to-json-schema-tester": "../sequelize-to-json-schema-tester"
+    "mocha": "^5.1.0"
   },
   "peerDependencies": {
     "sequelize": "^3.31.2"
