@@ -80,6 +80,9 @@ describe('SequelizeSchema', () => {
 				country: { type: 'string' },
 			});
 		});
+		it('puts hasMany in array', () => {
+			expect(schema.properties.address.type).to.eq('array');
+		});
 		it('adds $ref', () => {
 			expect(schema.properties.profile).to.containSubset({
 				$ref: 'schema.example/profile.json',
