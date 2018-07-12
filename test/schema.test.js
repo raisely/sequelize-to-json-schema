@@ -77,11 +77,17 @@ describe('SequelizeSchema', () => {
 	describe('associations', () => {
 		it('inserts inline', () => {
 			expect(schema.properties.address.items.properties).to.containSubset({
-				country: { type: 'string' },
+				country: {
+					$id: '/properties/address/properties/country',
+					type: 'string',
+				},
 			});
 		});
 		it('puts hasMany in array', () => {
 			expect(schema.properties.address.type).to.eq('array');
+		});
+		it('puts $id in array types also', () => {
+			expect(schema.properties.address.$id).to.eq('/properties/address');
 		});
 		it('adds $ref', () => {
 			expect(schema.properties.profile).to.containSubset({
