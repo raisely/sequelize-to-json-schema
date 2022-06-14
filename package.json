@@ -1,6 +1,6 @@
 {
   "name": "sequelize-to-json-schema",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Flexible json-schema generator from sequelize models",
   "main": "lib/index.js",
   "scripts": {
@@ -45,6 +45,6 @@
     "mocha": "^5.1.0"
   },
   "peerDependencies": {
-    "sequelize": "^3.31.2"
+    "sequelize": "^6.19.2"
   }
 }

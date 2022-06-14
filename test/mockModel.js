@@ -7,13 +7,13 @@ function modelFactory(name, attributes) {
 		associate,
 		name,
 		tableName: name,
-		attributes: {},
+		rawAttributes: {},
 		associations: {},
 	};
 
 	_.forEach(attributes, (value, attr) => {
 		const attribute = _.isString(value) ? { key: value } : value;
-		model.attributes[attr] = { type: attribute };
+		model.rawAttributes[attr] = { type: attribute };
 	});
 
 	models[name] = model;

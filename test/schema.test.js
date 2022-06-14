@@ -16,7 +16,7 @@ function selectAttributes(model) {
 		return ['full_name', 'address', 'profile', 'status', 'name'];
 	}
 
-	return Object.keys(model.attributes);
+	return Object.keys(model.rawAttributes);
 }
 
 function jsonAttributeMapper(model, name) {
